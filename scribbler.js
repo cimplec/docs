@@ -13,7 +13,7 @@ var getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
   var txt = `simc test.simc
-  
+
   C code generated at ./test.c
   `;
   var speed = 60;

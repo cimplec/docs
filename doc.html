@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <title>simC - Documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="scribbler-global.css">
@@ -14,81 +14,342 @@
   <body>
     <div class="doc__bg"></div>
     <nav class="header">
-      <h1 class="logo">Scribbler <span class="logo__thin">Doc</span></h1>
+      <h1 class="logo">simC <span class="logo__thin">Docs</span></h1>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="https://github.com/cimplec/sim-c" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
         <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
       </ul>
     </nav>
     <div class="wrapper">
       <aside class="doc__nav">
         <ul>
-          <li class="js-btn selected">Get Started</li>
-          <li class="js-btn">Configuration</li>
-          <li class="js-btn">Keybindings</li>
-          <li class="js-btn">Issues</li>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">Arithmetic Operators</li>
+          <li class="js-btn">Relational Operators</li>
+          <li class="js-btn">Variables</li>
+          <li class="js-btn">Strings</li>
+          <li class="js-btn">Print Statement</li>
+          <li class="js-btn">Loops</li>
+          <li class="js-btn">Comments</li>
         </ul>
       </aside>
       <article class="doc__content">
         <section class="js-section">
-          <h3 class="section__title">Get Started</h3>
-          <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default saving folder location.</p>
-          <h3 class="section__title">Installation</h3>
-          <div class="code__block code__block--notabs">
-            <pre class="code code--block">
-              <code>
-                $ scribbler  ——config
-                  {
-                    “encryption”: true, 
-                    “highlighting“: true,
-                    “prettyTable”: false,
-                    “font”: [“Helvetica”, “sans-serif”],
-                    “folder”: “~/Desktop“
-                  }
-              </code>
-            </pre>
-          </div>
+          <h3 class="section__title">Introduction</h3>
+            <h4 class="section__title">What is simC?</h4>
+            <p style="text-align: justify;">
+              Often people have trouble programming in C (especially beginners) due to its low level syntax and
+              unavailability of stable third party libraries. We present sim-C a high-level front end for C
+              which creates a dynamically typed syntax for C. User can write code in this high level syntax and
+              then compile it to optimized C code. sim-C does not process the code and simply translates it to
+              C thus, there is no possibility of the code running slowly. So, with sim-C users can write code
+              faster using the high level syntax and at the same time be able to harness the power and speed of a
+              C program. Let us make C cool again.
+            </p>
+
+            <h4 class="section__title">Pipeline</h4>
+              <img style="display: block; margin: 0 auto;" src="images/simc-pipeline.png" alt="Not found">
+
+            <h4 class="section__title">Steps to run</h4>
+              <ul>
+                <li><p>Open any text editor of choice</p></li>
+                <li><p>Write code using simC high-level syntax</p></li>
+                <li><p>Run the file using simC compiler:</p>
+                  <pre class="code code--block">
+                  <code>
+                    $ simc test.simc
+                  </code>
+                </pre></li>
+                <li><p>C code file is generated with the same name as the simc file, but with extension .c</p></li>
+              </ul>
+
         </section>
         <section class="js-section">
-          <h3 class="section__title">Configuration</h3>
-          <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default saving folder location.</p>
-          <table id="customers">
+          <h3 class="section__title">Arithmetic Operators</h3>
+            <table id="customers">
             <tr>
-              <th>Options</th>
-              <th>Value</th>
-              <th>Default</th>
+              <th>Operator</th>
+              <th>simC</th>
+              <th>C</th>
             </tr>
             <tr>
-              <td>encryption</td>
-              <td>encrypt all notes before saving. If turned on, it requires password to open the file.</td>
-              <td>false</td>
+              <td>+ (Addition)</td>
+              <td>1 + 2</td>
+              <td>1 + 2</td>
             </tr>
             <tr>
-              <td>highlighting</td>
-              <td>Show syntax highlight on markdown text.</td>
-              <td>true</td>
+              <td>- (Subtraction)</td>
+              <td>1 - 2</td>
+              <td>1 - 2</td>
             </tr>
             <tr>
-              <td>prettyTable</td>
-              <td>Render table with Scribbler’s pretty table style.</td>
-              <td>true</td>
+              <td>* (Multiplication)</td>
+              <td>1 * 2</td>
+              <td>1 * 2</td>
+            </tr>
+            <tr>
+              <td>/ (Division)</td>
+              <td>1 / 2</td>
+              <td>1 / 2</td>
+            </tr>
+            <tr>
+              <td>% (Modulus)</td>
+              <td>1 % 2</td>
+              <td>1 % 2</td>
             </tr>
           </table>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <hr />
         </section>
         <section class="js-section">
-          <h3 class="section__title">Keybindings</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <hr />
+          <h3 class="section__title">Relational Operators</h3>
+            <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>simC</th>
+              <th>C</th>
+            </tr>
+            <tr>
+              <td>< (Lesser than)</td>
+              <td>1 < 2</td>
+              <td>1 < 2</td>
+            </tr>
+            <tr>
+              <td>> (Greater than)</td>
+              <td>1 > 2</td>
+              <td>1 > 2</td>
+            </tr>
+            <tr>
+              <td>== (Equal to)</td>
+              <td>1 == 2</td>
+              <td>1 == 2</td>
+            </tr>
+            <tr>
+              <td><= (Lesser than or equal to)</td>
+              <td>1 <= 2</td>
+              <td>1 >= 2</td>
+            </tr>
+            <tr>
+              <td>>= (Greater than or equal to)</td>
+              <td>1 >= 2</td>
+              <td>1 >= 2</td>
+            </tr>
+            <tr>
+              <td>!= (Not equal to)</td>
+              <td>1 != 2</td>
+              <td>1 != 2</td>
+            </tr>
+          </table>
         </section>
         <section class="js-section">
-          <h3 class="section__title">Issues</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+          <h3 class="section__title">Variables</h3>
+            <h4 class="section__title">Declaration</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              var a
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              not_known a;
+              </code>
+              </pre>
+              <p><strong><u>Note</u></strong>: simC is a dynamically typed syntax for C so variable declarations do not require explicit mention of types.</p>
+              <p><strong><u>Note</u></strong>: Identifiers cannot be named after a C keyword.</p>
+            <h4 class="section__title">Initialization</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              var a = 2
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              int a = 2;
+              </code>
+              </pre>
+            <h4 class="section__title">Assignment</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              a = 2
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              a = 2;
+              </code>
+              </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Strings</h3>
+            <p>simC code:</p>
+            <pre class="code code--block">
+            <code>
+            var a = "Hello"
+            </code>
+            </pre>
+            <p>C code:</p>
+            <pre class="code code--block">
+            <code>
+            char* a = "Hello";
+            </code>
+            </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Print statement</h3>
+            <h4 class="section__title">Print a string</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              print("Hello World")
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              printf("Hello World");
+              </code>
+              </pre>
+            <h4 class="section__title">Print a numeric constant</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              print(3.14159)
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              printf("%f", 3.14159);
+              </code>
+              </pre>
+            <h4 class="section__title">Print a variable</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              var a_var = 42
+              print(a_var)
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              int a_var = 42;
+              printf("%d", a_var);
+              </code>
+              </pre>
+            <h4 class="section__title">Print with variables embedded in strings</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              var a_var = 42
+              print("The value of a_var = {a_var}")
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              int a_var = 42;
+              printf("The value of a_var = %d", a_var);
+              </code>
+              </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Loops</h3>
+            <h4 class="section__title">For loop</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              for i in 1 to 10 by +1 {
+              &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+              }
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              for(int i=0; i<10; i++) {
+              &nbsp;&nbsp;&nbsp;&nbsp;printf("%d", i);
+              }
+              </code>
+              </pre>
+            <h4 class="section__title">While loop</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              var i = 0
+              while(i < 10) {
+              &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+              }
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              int i = 0;
+              while(i < 10) {
+              &nbsp;&nbsp;&nbsp;&nbsp;printf("%d", i);
+              }
+              </code>
+              </pre>
+            <h4 class="section__title">Do while loop</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              var i = 0
+              do {
+                print(i)
+              } while(i <= 0)
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              int i = 0;
+              do {
+                printf("%d", i);
+              } while(i <= 0);
+              </code>
+              </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Comments</h3>
+            <h4 class="section__title">Single line comments</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              // This is a single line comment.
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              // This is a single line comment.
+              </code>
+              </pre>
+            <h4 class="section__title">Multi line comments</h4>
+              <p>simC code:</p>
+              <pre class="code code--block">
+              <code>
+              /*
+                This is a multi line comment
+                simC - High level dynamically typed C
+              */
+              </code>
+              </pre>
+              <p>C code:</p>
+              <pre class="code code--block">
+              <code>
+              /*
+                This is a multi line comment
+                simC - High level dynamically typed C
+              */
+              </code>
+              </pre>
         </section>
       </article>
     </div>
