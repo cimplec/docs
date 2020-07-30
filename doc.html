@@ -32,6 +32,11 @@
           <li class="js-btn">Print Statement</li>
           <li class="js-btn">Loops</li>
           <li class="js-btn">Comments</li>
+          <li class="js-btn">Input Statement</li>
+          <li class="js-btn">Conditional Statements</li>
+          <li class="js-btn">Code Blocks</li>
+          <li class="js-btn">Functions</li>
+          <li class="js-btn">Pointers</li>
         </ul>
       </aside>
       <article class="doc__content">
@@ -350,6 +355,323 @@
               */
               </code>
               </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Input Statement</h3>
+          <h4 class="section__title">Integer input</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var a = input(“Enter a number : “, “i”)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              int a;
+              printf("Enter a number : ");
+              scanf("%d", &a);
+            </code>
+          </pre>
+          <h4 class="section__title">Float input</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var a = input(“Enter a number : “, “f”)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              float a;
+              printf("Enter a number : ");
+              scanf("%f", &a);
+            </code>
+          </pre>
+          <h4 class="section__title">Double input</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var a = input(“Enter a number : “, “d”)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              double a;
+              printf("Enter a number : ");
+              scanf("%lf", &a);
+            </code>
+          </pre>
+          <h4 class="section__title">String input</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var a = input(“Enter a string : “, “s”)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              char* a;
+              printf("Enter a string : ");
+              scanf("%s", &a);
+            </code>
+          </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Conditional Statements</h3>
+          <h4 class="section__title">if statement</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              if(condition){
+                statement1;
+                statement2;
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              if(condition){
+                statement1;
+                statement2;
+              }
+            </code>
+          </pre>
+          <h4 class="section__title">if-else statement</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              if(condition){
+                statement1;
+                statement2;
+              }
+              else{
+                statement3;
+                statement4;
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              if(condition){
+                statement1;
+                statement2;
+              }
+              else{
+                statement3;
+                statement4;
+              }
+            </code>
+          </pre>
+          <h4 class="section__title">Nested if-else (if-else ladder)</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              if(condition1){
+                statement1;
+                statement2;
+              }
+              else if(condition2){
+                statement3;
+                statement4;
+              }
+              else{
+                statement5;
+                statement6;
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              if(condition1){
+                statement1;
+                statement2;
+              }
+              else if(condition2){
+                statement3;
+                statement4;
+              }
+              else{
+                statement5;
+                statement6;
+              }
+            </code>
+          </pre>
+          <h4 class="section__title">Switch Case</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              switch (expression) {
+                case constant_expression : statement
+                default : statement
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              switch (expression) {
+                case constant_expression : statement
+                default : statement
+              }
+            </code>
+          </pre>
+          <h4 class="section__title">break statement</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              break
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              break;
+            </code>
+          </pre>
+          <h4 class="section__title">continue statement</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              continue
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              continue;
+            </code>
+          </pre>
+          <h4 class="section__title">exit statement</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              exit(integer)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              exit(integer)
+            </code>
+          </pre>
+          <h4 class="section__title">return statement</h4>
+          <h5 class="section__title">return expression</h5>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              return (expression)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              return (expression);
+            </code>
+          </pre>
+          <h5 class="section__title">return void</h5>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              return
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              return;
+            </code>
+          </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Code Blocks</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              {
+                var a = 1
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              {
+                int a = 1;
+              }
+            </code>
+          </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Functions</h3>
+          <h4 class="section__title">Function Definition</h4>
+          <pre class="code code--block">
+            <code>
+              def sum(a, b) {
+                a = a + 1
+                b = b + 1
+                return a + b
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              int sum(int a, int b) {
+                a = a + 1
+                b = b + 1
+                return a + b;
+              }
+            </code>
+          </pre>
+          <h4 class="section__title">Function Calling</h4>
+          <pre class="code code--block">
+            <code>
+              sum(1, 2)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              sum(1, 2);
+            </code>
+          </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Pointers</h3>
+          <h3 class="section__title">Pointer Declaration</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var *n
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              not_known *n;
+            </code>
+          </pre>
+          <h3 class="section__title">Pointer Declaration and Assignment</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var a
+              var *n = &a
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              not_known a;
+              not_known *n = &a;
+            </code>
+          </pre>
         </section>
       </article>
     </div>
