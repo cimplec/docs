@@ -590,12 +590,88 @@
         </section>
         <section class="js-section">
           <h3 class="section__title">Code Blocks</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              {
+                var a = 1
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              {
+                int a = 1;
+              }
+            </code>
+          </pre>
         </section>
         <section class="js-section">
           <h3 class="section__title">Functions</h3>
+          <h4 class="section__title">Function Definition</h4>
+          <pre class="code code--block">
+            <code>
+              def sum(a, b) {
+                a = a + 1
+                b = b + 1
+                return a + b
+              }
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              int sum(int a, int b) {
+                a = a + 1
+                b = b + 1
+                return a + b;
+              }
+            </code>
+          </pre>
+          <h4 class="section__title">Function Calling</h4>
+          <pre class="code code--block">
+            <code>
+              sum(1, 2)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              sum(1, 2);
+            </code>
+          </pre>
         </section>
         <section class="js-section">
           <h3 class="section__title">Pointers</h3>
+          <h3 class="section__title">Pointer Declaration</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var *n
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              not_known *n;
+            </code>
+          </pre>
+          <h3 class="section__title">Pointer Declaration and Assignment</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var a
+              var *n = &a
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              not_known a;
+              not_known *n = &a;
+            </code>
+          </pre>
         </section>
       </article>
     </div>
