@@ -38,6 +38,12 @@
           <li class="js-btn">Code Blocks</li>
           <li class="js-btn">Functions</li>
           <li class="js-btn">Pointers</li>
+          <li class="js-btn">Typeof</li>
+          <li class="js-btn">Macros</li>
+          <li class="js-btn">Explicit Typecasting</li>
+          <li class="js-btn">Bitwise Operators</li>
+          <li class="js-btn">Dynamic Memory Allocation</li>
+          <li class="js-btn">Arrays</li>
         </ul>
       </aside>
       <article class="doc__content">
@@ -694,6 +700,193 @@
             </code>
           </pre>
         </section>
+        
+        <!--typeof-->
+        <section class="js-section">
+          <h3 class="section__title">Typeof</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+                var a = 1
+                typeof(a) b = 2
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              int a = 1;
+              typeof(a)b = 2;
+            </code>
+          </pre>
+        </section>
+
+        <!--macros-->
+        <section class="js-section">
+          <h3 class="section__title">Macros</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              #define CNAME value 
+              or
+              #define CNAME (expression)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              #define CNAME value
+              or
+              #define CNAME (expression)
+            </code>
+        </section>
+
+        <!--explicit typecasting-->
+        <section class="js-section">
+          <h3 class="section__title">Explicit Typecasting</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+                var a = 1
+                var b = '5'
+                var c = a + (int)b
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+                int a = 1;
+                char b = '5';
+                int c = a + (int)b;
+            </code>
+          </pre>
+        </section>
+
+        <!--bitwise operator-->
+        <section class="js-section">
+          <h3 class="section__title">Bitwise Operators</h3>
+            <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>simC</th>
+              <th>C</th>
+            </tr>
+            <tr>
+              <td>& Binary AND</td>
+              <td>1 & 2</td>
+              <td>1 & 2</td>
+            </tr>
+            <tr>
+              <td>| Binary OR</td>
+              <td>1 | 2</td>
+              <td>1 | 2</td>
+            </tr>
+            <tr>
+              <td>^ Binary XOR</td>
+              <td>1 ^ 2</td>
+              <td>1 ^ 2</td>
+            </tr>
+            <tr>
+              <td>~ Binary One's Complement Operator</td>
+              <td>1 ~ 2</td>
+              <td>1 ~ 2</td>
+            </tr>
+            <tr>
+              <td><< Binary Left Shift Operator</td>
+              <td>1 << 2</td>
+              <td>1 << 2</td>
+            </tr>
+            <tr>
+              <td>>> Binary Right Shift Operator)</td>
+              <td>1 >> 2</td>
+              <td>1 >> 2</td>
+            </tr>
+          </table>
+        </section>
+
+        <!--dynamic memory allocation-->
+        <section class="js-section">
+          <h3 class="section__title">Dynamic Memory Allocation</h3>
+          <h4 class="section__title">malloc()</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var *ptr
+              ptr = (cast-type*)malloc(byte-size)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              int* ptr;
+              ptr = (cast-type*)malloc(byte-size); 
+            </code>
+          </pre>
+          <h4 class="section__title">calloc()</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var *ptr
+              ptr = (cast-type*)calloc(number_of_elements, new-size)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              int* ptr;
+              ptr = (cast-type*)calloc(number_of_elements, new-size); 
+            </code>
+          </pre>
+          <h4 class="section__title">realloc()</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              ptr = realloc(ptr, new_size)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              ptr = realloc(ptr, new_size); 
+            </code>
+          </pre>
+          <h4 class="section__title">free()</h4>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              free(ptr)
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              free(ptr); 
+            </code>
+          </pre>
+        </section>
+
+        <!--arrays-->
+        <section class="js-section">
+          <h3 class="section__title">Arrays</h3>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              var arrayName
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              type arrayName[ arraySize ];
+            </code>
+          </pre>
+          <pre class="code code--block">
+            <code>
+              type arrayName[] = {arr_1, arr_2, arr_3,....,arr_n<sup>th</sup>};
+            </code>
+          </pre>
+        </section>
+      </article>
+    </div>
       </article>
     </div>
 
