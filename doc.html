@@ -37,6 +37,7 @@
           <li class="js-btn">Code Blocks</li>
           <li class="js-btn">Functions</li>
           <li class="js-btn">Pointers</li>
+          <li class="js-btn">Raw C code</li>
         </ul>
       </aside>
       <article class="doc__content">
@@ -695,6 +696,47 @@
             <code>
               not_known a;
               not_known *n = &a;
+            </code>
+          </pre>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Raw C code</h3>
+          <p style="text-align: justify;">
+            Sometimes the user might feel to write the actual C code while coding in simC as he/she might feel that the original C syntax is better or he/she finds it more comfortable
+            to use it instead of the simC syntax. Apart from this, another reason for including the direct C code in simC file would be that the simC syntax of that particular feature 
+            of C language might not yet be developed or still being developed. The user can't wait for its syntax as the requirement is urgent. in such cases, the user can write the actual 
+            C code in the simC file and still get the desired results. The raw C code can be written in between the BEGIN_C and END_C keywords.
+          </p>
+          <p>simC code:</p>
+          <pre class="code code--block">
+            <code>
+              MAIN
+                var i = 0
+                print(i)
+                
+                BEGIN_C
+                    int c = 10;
+                    int* ptr = &c;
+                    printf("%d\n", *ptr);
+                END_C
+              END_MAIN
+            </code>
+          </pre>
+          <p>C code:</p>
+          <pre class="code code--block">
+            <code>
+              #include <stdio.h>
+
+                int main() {
+                  int i = 0;
+                  printf("%d", i);
+                
+                        int c = 10;
+                        int* ptr = &c;
+                        printf("%d\n", *ptr);
+                
+                  return 0;
+                }
             </code>
           </pre>
         </section>
