@@ -175,531 +175,309 @@
           <h3 class="section__title">Variables</h3>
             <h4 class="section__title">Declaration</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var a
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/3826a9ab558ac200a28afc6dd0029855.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              not_known a;
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/da763597348bb2655e22a357a830438c.js"></script>
+
               <p><strong><u>Note</u></strong>: simC is a dynamically typed syntax for C so variable declarations do not require explicit mention of types.</p>
               <p><strong><u>Note</u></strong>: Identifiers cannot be named after a C keyword.</p>
             <h4 class="section__title">Initialization</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var a = 2
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/bfca52cce89089c5eca3ea5725dcd424.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              int a = 2;
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/2af1ca92d50e850d0c0fe6dcb7c3f23a.js"></script>
+
             <h4 class="section__title">Assignment</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              a = 2
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/1fb735c6363489754da3aac57a4c0d48.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              a = 2;
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/af94a9d2ff55f50800c9d36dbecb597f.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Strings</h3>
             <p>simC code:</p>
-            <pre class="code code--block">
-            <code>
-            var a = "Hello"
-            </code>
-            </pre>
+
+            <script src="https://gist.github.com/frankhart2018/6b50468919f820795bf9f15c0bb3369d.js"></script>
+
             <p>C code:</p>
-            <pre class="code code--block">
-            <code>
-            char* a = "Hello";
-            </code>
-            </pre>
+
+            <script src="https://gist.github.com/frankhart2018/84f3ac347ba561483d3386a4af7bed2f.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Print statement</h3>
             <h4 class="section__title">Print a string</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              print("Hello World")
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/9386a14c87dc1853fdd94fa27eb05d08.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              printf("Hello World");
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/e1cd0e90c5b42f7d7b1350c11fa35976.js"></script>
+
             <h4 class="section__title">Print a numeric constant</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              print(3.14159)
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/9c9a1337ed39993cae7a3ae2f01e2f97.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              printf("%f", 3.14159);
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/a69d2dec67d309709ef228ac9b3b50e6.js"></script>
+
             <h4 class="section__title">Print a variable</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var a_var = 42
-              print(a_var)
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/8f660d5776ba83d736378bf40c17bbc8.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              int a_var = 42;
-              printf("%d", a_var);
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/a4b46463aaf7ca6a9f7935099eab47c1.js"></script>
+
             <h4 class="section__title">Print with variables embedded in strings</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var a_var = 42
-              print("The value of a_var = {a_var}")
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/56246355613061a3e1799621aed10f34.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              int a_var = 42;
-              printf("The value of a_var = %d", a_var);
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/4bb5c96d6bd78008abb23c42b8bbd373.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Loops</h3>
             <h4 class="section__title" id="forloop">For loop</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var n = 10
-              for i in 1 to n by +1 {
-              &nbsp;&nbsp;&nbsp;&nbsp;print(i)
-              }
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/1892518883df1930cfb343b9d891a069.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              int n = 10;
-              for(int i=0; i<n; i++) {
-              &nbsp;&nbsp;&nbsp;&nbsp;printf("%d", i);
-              }
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/5465c2e84f21655e4c81154b312ac24a.js"></script>
+
             <h4 class="section__title">While loop</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var i = 0
-              while(i < 10) {
-              &nbsp;&nbsp;&nbsp;&nbsp;print(i)
-              }
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/1b5d2558438424ec66f968a4e3bbc5a0.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              int i = 0;
-              while(i < 10) {
-              &nbsp;&nbsp;&nbsp;&nbsp;printf("%d", i);
-              }
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/78a37b20046bb447dedabb3f655116c8.js"></script>
+
             <h4 class="section__title">Do while loop</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              var i = 0
-              do {
-                print(i)
-              } while(i <= 0)
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/8ce3d6ddaa4f0578fc037253147b10d5.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              int i = 0;
-              do {
-                printf("%d", i);
-              } while(i <= 0);
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/8f98be93afd09fa8fb1d7d55a4336518.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Comments</h3>
             <h4 class="section__title">Single line comments</h4>
-              <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              // This is a single line comment.
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/752b4d83a969d5c48a80e88f7c2f598c.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              // This is a single line comment.
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/c60724317ef6179956db4caca3cccbb3.js"></script>
+
             <h4 class="section__title">Multi line comments</h4>
               <p>simC code:</p>
-              <pre class="code code--block">
-              <code>
-              /*
-                This is a multi line comment
-                simC - High level dynamically typed C
-              */
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/68bbed233507e1ae8cbd050cd65a67e1.js"></script>
+
               <p>C code:</p>
-              <pre class="code code--block">
-              <code>
-              /*
-                This is a multi line comment
-                simC - High level dynamically typed C
-              */
-              </code>
-              </pre>
+
+              <script src="https://gist.github.com/frankhart2018/3fb2142103f04337e9888b2fd6d762bd.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Input Statement</h3>
           <h4 class="section__title">Integer input</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              var a = input(“Enter a number : “, “i”)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/f02d1538541ab0c28f5413ad77dd3092.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              int a;
-              printf("Enter a number : ");
-              scanf("%d", &a);
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/57ec78a1ff1f666464f354c8f6b2edc8.js"></script>
+
           <h4 class="section__title">Float input</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              var a = input(“Enter a number : “, “f”)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/acb2e5ef4fd486eb09fea9cd188ee3a0.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              float a;
-              printf("Enter a number : ");
-              scanf("%f", &a);
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/2a0c623ba0dbf857896189a67d9770a6.js"></script>
+
           <h4 class="section__title">Double input</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              var a = input(“Enter a number : “, “d”)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/df7e30dc7136df185d44fda81b5c2e28.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              double a;
-              printf("Enter a number : ");
-              scanf("%lf", &a);
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/b1051b151e91c000ba651a285ba501db.js"></script>
+
           <h4 class="section__title">String input</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              var a = input(“Enter a string : “, “s”)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/a1a905c5fe774c1d71f877839a39fd47.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              char* a;
-              printf("Enter a string : ");
-              scanf("%s", &a);
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/6fe074940fe391cf06487a2f1fbfe564.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Conditional Statements</h3>
           <h4 class="section__title">if statement</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              if(condition){
-                statement1;
-                statement2;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/c2dc12d9763f7f740a4d00e7c8e4fbf3.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              if(condition){
-                statement1;
-                statement2;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/fb8acf4729c1773499bfabdbf5f67061.js"></script>
+
           <h4 class="section__title">if-else statement</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              if(condition){
-                statement1;
-                statement2;
-              }
-              else{
-                statement3;
-                statement4;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/9dbe7fbab88ac3c8e59da70110871307.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              if(condition){
-                statement1;
-                statement2;
-              }
-              else{
-                statement3;
-                statement4;
-              }
-            </code>
+
+          <script src="https://gist.github.com/frankhart2018/de38de7b6fe5b01615115d3aa90fc778.js"></script>
+
           </pre>
           <h4 class="section__title">Nested if-else (if-else ladder)</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              if(condition1){
-                statement1;
-                statement2;
-              }
-              else if(condition2){
-                statement3;
-                statement4;
-              }
-              else{
-                statement5;
-                statement6;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/ceafd853b48fc2d6833f7ef8bcccc6f3.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              if(condition1){
-                statement1;
-                statement2;
-              }
-              else if(condition2){
-                statement3;
-                statement4;
-              }
-              else{
-                statement5;
-                statement6;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/5a7b1445b923cf036be98842546b5c7d.js"></script>
+
           <h4 class="section__title">Switch Case</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              switch (expression) {
-                case constant_expression : statement
-                default : statement
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/8c6655dd81a6768f29870525c3151920.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              switch (expression) {
-                case constant_expression : statement
-                default : statement
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/da24551478dcdd46848d0a18953d38bb.js"></script>
+
           <h4 class="section__title">break statement</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              break
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/c14c403aca328e33cf69b2edbc6967e9.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              break;
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/b48c3884056b051f429f4ed3893286d8.js"></script>
+
           <h4 class="section__title">continue statement</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              continue
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/c9258cf36a826364bc47091b82c58bf7.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              continue;
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/f47c4bb598462e5807eb09ae31213229.js"></script>
+
           <h4 class="section__title">exit statement</h4>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              exit(integer)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/12b2b6c4fd85a34aad751d23d07cbb95.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              exit(integer)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/2c5e1f791804fd0b9ace554332d26444.js"></script>
+
           <h4 class="section__title">return statement</h4>
           <h5 class="section__title">return expression</h5>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              return (expression)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/a18fb3e9889ecad98675e679e6bea656.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              return (expression);
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/1c4af03ee120bd2b96554dead6d2b955.js"></script>
+
           <h5 class="section__title">return void</h5>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              return
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/e173b453f549bdc74de398078b90a1be.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              return;
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/e6b96e8d70a7e09fba9165b826c874e6.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Code Blocks</h3>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              {
-                var a = 1
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/8442dc78312286e48f55ea640b1cc89d.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              {
-                int a = 1;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/2da6aa53d86aa349aa1bbc9af0b0b367.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Functions</h3>
           <h4 class="section__title">Function Definition</h4>
-          <pre class="code code--block">
-            <code>
-              fun sum(a, b) {
-                a = a + 1
-                b = b + 1
-                return a + b
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/28aa4b9548ecd0be30f408abb65ddcd7.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              int sum(int a, int b) {
-                a = a + 1
-                b = b + 1
-                return a + b;
-              }
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/61c3160952d976a7bc6e0c8ce14b18b4.js"></script>
+
           <h4 class="section__title">Function Calling</h4>
-          <pre class="code code--block">
-            <code>
-              sum(1, 2)
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/45fa5ec2e9311af44690adb209ac6c40.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              sum(1, 2);
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/d9dc8588959ca23cf2db54f438e3b7e7.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Pointers</h3>
           <h3 class="section__title">Pointer Declaration</h3>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              var *n
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/ba19f40da3a20cb413f06f993e92357a.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              not_known *n;
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/399c96c2e6e85f4d1461bd0c6702e241.js"></script>
+
           <h3 class="section__title">Pointer Declaration and Assignment</h3>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              var a
-              var *n = &a
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/60b426bba34c5b2a27ad2d360f2742d5.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              not_known a;
-              not_known *n = &a;
-            </code>
-          </pre>
+
+          <script src="https://gist.github.com/frankhart2018/018ccc2e7467c7259812391860d631d3.js"></script>
+
         </section>
         <section class="js-section">
           <h3 class="section__title" id="rawc">Raw C code</h3>
@@ -710,37 +488,13 @@
             C code in the simC file and still get the desired results. The raw C code can be written in between the BEGIN_C and END_C keywords.
           </p>
           <p>simC code:</p>
-          <pre class="code code--block">
-            <code>
-              MAIN
-                var i = 0
-                print(i)
 
-                BEGIN_C
-                    int c = 10;
-                    int* ptr = &c;
-                    printf("%d\n", *ptr);
-                END_C
-              END_MAIN
-            </code>
-          </pre>
+          <script src="https://gist.github.com/frankhart2018/edd2e3a540eb0924c687ce001a33a40e.js"></script>
+
           <p>C code:</p>
-          <pre class="code code--block">
-            <code>
-              #include <stdio.h>
 
-                int main() {
-                  int i = 0;
-                  printf("%d", i);
+          <script src="https://gist.github.com/frankhart2018/d02fb073f9da8259ff8fb9c8e5196e1b.js"></script>
 
-                        int c = 10;
-                        int* ptr = &c;
-                        printf("%d\n", *ptr);
-
-                  return 0;
-                }
-            </code>
-          </pre>
         </section>
       </article>
     </div>
