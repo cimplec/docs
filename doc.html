@@ -291,11 +291,12 @@
         </section>
         <section class="js-section">
           <h3 class="section__title">Loops</h3>
-            <h4 class="section__title">For loop</h4>
+            <h4 class="section__title" id="forloop">For loop</h4>
               <p>simC code:</p>
               <pre class="code code--block">
               <code>
-              for i in 1 to 10 by +1 {
+              var n = 10
+              for i in 1 to n by +1 {
               &nbsp;&nbsp;&nbsp;&nbsp;print(i)
               }
               </code>
@@ -303,7 +304,8 @@
               <p>C code:</p>
               <pre class="code code--block">
               <code>
-              for(int i=0; i<10; i++) {
+              int n = 10;
+              for(int i=0; i<n; i++) {
               &nbsp;&nbsp;&nbsp;&nbsp;printf("%d", i);
               }
               </code>
@@ -703,8 +705,8 @@
           <h3 class="section__title" id="rawc">Raw C code</h3>
           <p style="text-align: justify;">
             Sometimes the user might feel to write the actual C code while coding in simC as he/she might feel that the original C syntax is better or he/she finds it more comfortable
-            to use it instead of the simC syntax. Apart from this, another reason for including the direct C code in simC file would be that the simC syntax of that particular feature 
-            of C language might not yet be developed or still being developed. The user can't wait for its syntax as the requirement is urgent. in such cases, the user can write the actual 
+            to use it instead of the simC syntax. Apart from this, another reason for including the direct C code in simC file would be that the simC syntax of that particular feature
+            of C language might not yet be developed or still being developed. The user can't wait for its syntax as the requirement is urgent. in such cases, the user can write the actual
             C code in the simC file and still get the desired results. The raw C code can be written in between the BEGIN_C and END_C keywords.
           </p>
           <p>simC code:</p>
@@ -713,7 +715,7 @@
               MAIN
                 var i = 0
                 print(i)
-                
+
                 BEGIN_C
                     int c = 10;
                     int* ptr = &c;
@@ -730,11 +732,11 @@
                 int main() {
                   int i = 0;
                   printf("%d", i);
-                
+
                         int c = 10;
                         int* ptr = &c;
                         printf("%d\n", *ptr);
-                
+
                   return 0;
                 }
             </code>
