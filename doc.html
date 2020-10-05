@@ -71,6 +71,30 @@
                 <li><p>C code file is generated with the same name as the simc file, but with extension .c</p></li>
               </ul>
 
+            <h4 class="section__title">Some debugging commands</h4>
+            <p style="text-align: justify;">
+              These commands are to be used in terminal while executing the file written in simC. These commands displays the tokens and opcodes that are 
+              created during the compilation of the simc code.
+            </p>
+            <ul>
+              <li>
+                <p>To print all the tokens during compilation</p>
+                <pre class="code code--block">
+                  <code>
+                    $ simc <filename.simc> token
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <p>To print all the opcodes during compilation</p>
+                <pre class="code code--block">
+                  <code>
+                    $ simc <filename.simc> opcode
+                  </code>
+                </pre>
+              </li>
+            </ul>
+
         </section>
         <section class="js-section">
           <h3 class="section__title">Arithmetic Operators</h3>
@@ -153,7 +177,7 @@
           </table>
         </section>
         <section class="js-section">
-          <h3 class="section__title">Logical Operators</h3>
+          <h3 class="section__title" id="logicalop">Logical Operators</h3>
             <table id="customers">
             <tr>
               <th>Operator</th>
@@ -307,7 +331,7 @@
         <section class="js-section">
           <h3 class="section__title">Input Statement</h3>
 
-          <h4 class="section__title">Input without message prompt and type specification</h4>
+          <h4 class="section__title" id="inp">Input without message prompt and type specification</h4>
           <p>simC code:</p>
           <script src="https://gist.github.com/dhairyaj/4ac58c7a005a771b7b6efbab54163ba6.js"></script>
 
