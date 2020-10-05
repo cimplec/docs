@@ -23,25 +23,28 @@
     <div class="wrapper">
       <aside class="doc__nav">
         <ul>
+
           <li class="js-btn selected">Introduction</li>
-          <li class="js-btn">Arithmetic Operators</li>
-          <li class="js-btn">Relational Operators</li>
-          <li class="js-btn">Logical Operators</li>
+          <li class="js-btn">Main Function</li>
+          <li class="js-btn">Input Statement</li>
           <li class="js-btn">Variables</li>
           <li class="js-btn">Strings</li>
           <li class="js-btn">Print Statement</li>
-          <li class="js-btn">Loops</li>
+          <li class="js-btn">Arithmetic Operators</li>
+          <li class="js-btn">Relational Operators</li>
+          <li class="js-btn">Logical Operators</li>
           <li class="js-btn">Comments</li>
-          <li class="js-btn">Input Statement</li>
-          <li class="js-btn">Conditional Statements</li>
           <li class="js-btn">Code Blocks</li>
+          <li class="js-btn">Loops</li>          
+          <li class="js-btn">Conditional Statements</li>          
           <li class="js-btn">Functions</li>
           <li class="js-btn">Pointers</li>
           <li class="js-btn">Raw C code</li>
-          <li class="js-btn">Main Function</li>
+          
         </ul>
       </aside>
       <article class="doc__content">
+        <!-- Introduction -->
         <section class="js-section">
           <h3 class="section__title">Introduction</h3>
             <h4 class="section__title">What is simC?</h4>
@@ -96,238 +99,16 @@
             </ul>
 
         </section>
+        <!-- Main_func -->
         <section class="js-section">
-          <h3 class="section__title">Arithmetic Operators</h3>
-            <table id="customers">
-            <tr>
-              <th>Operator</th>
-              <th>simC</th>
-              <th>C</th>
-            </tr>
-            <tr>
-              <td>+ (Addition)</td>
-              <td>1 + 2</td>
-              <td>1 + 2</td>
-            </tr>
-            <tr>
-              <td>- (Subtraction)</td>
-              <td>1 - 2</td>
-              <td>1 - 2</td>
-            </tr>
-            <tr>
-              <td>* (Multiplication)</td>
-              <td>1 * 2</td>
-              <td>1 * 2</td>
-            </tr>
-            <tr>
-              <td>/ (Division)</td>
-              <td>1 / 2</td>
-              <td>1 / 2</td>
-            </tr>
-            <tr>
-              <td>% (Modulus)</td>
-              <td>1 % 2</td>
-              <td>1 % 2</td>
-            </tr>
-            <tr>
-              <td>^ (Power, includes math.h during compilation)</td>
-              <td>1 ^ 2</td>
-              <td>pow(1, 2)</td>
-            </tr>
-          </table>
+          <h3 class="section__title">Main Function</h3>
+          <p>simC code:</p>
+          <script src="https://gist.github.com/dhairyaj/be12968e6d7123543dc321e3a1aa4605.js"></script>
+
+          <p>C code:</p>
+          <script src="https://gist.github.com/dhairyaj/cec5b869f9e86a9ccbf61b02a80f68eb.js"></script>
         </section>
-        <section class="js-section">
-          <h3 class="section__title">Relational Operators</h3>
-            <table id="customers">
-            <tr>
-              <th>Operator</th>
-              <th>simC</th>
-              <th>C</th>
-            </tr>
-            <tr>
-              <td>< (Lesser than)</td>
-              <td>1 < 2</td>
-              <td>1 < 2</td>
-            </tr>
-            <tr>
-              <td>> (Greater than)</td>
-              <td>1 > 2</td>
-              <td>1 > 2</td>
-            </tr>
-            <tr>
-              <td>== (Equal to)</td>
-              <td>1 == 2</td>
-              <td>1 == 2</td>
-            </tr>
-            <tr>
-              <td><= (Lesser than or equal to)</td>
-              <td>1 <= 2</td>
-              <td>1 >= 2</td>
-            </tr>
-            <tr>
-              <td>>= (Greater than or equal to)</td>
-              <td>1 >= 2</td>
-              <td>1 >= 2</td>
-            </tr>
-            <tr>
-              <td>!= (Not equal to)</td>
-              <td>1 != 2</td>
-              <td>1 != 2</td>
-            </tr>
-          </table>
-        </section>
-        <section class="js-section">
-          <h3 class="section__title" id="logicalop">Logical Operators</h3>
-            <table id="customers">
-            <tr>
-              <th>Operator</th>
-              <th>simC</th>
-              <th>C</th>
-            </tr>
-            <tr>
-              <td>&& (and)</td>
-              <td>1 && 2</td>
-              <td>1 && 2</td>
-            </tr>
-            <tr>
-              <td>|| (or)</td>
-              <td>1 || 2</td>
-              <td>1 || 2</td>
-            </tr>
-          </table>
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Variables</h3>
-            <h4 class="section__title">Declaration</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/3826a9ab558ac200a28afc6dd0029855.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/da763597348bb2655e22a357a830438c.js"></script>
-
-              <p><strong><u>Note</u></strong>: simC is a dynamically typed syntax for C so variable declarations do not require explicit mention of types.</p>
-              <p><strong><u>Note</u></strong>: Identifiers cannot be named after a C keyword.</p>
-            <h4 class="section__title">Initialization</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/bfca52cce89089c5eca3ea5725dcd424.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/2af1ca92d50e850d0c0fe6dcb7c3f23a.js"></script>
-
-            <h4 class="section__title">Assignment</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/1fb735c6363489754da3aac57a4c0d48.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/af94a9d2ff55f50800c9d36dbecb597f.js"></script>
-
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Strings</h3>
-            <p>simC code:</p>
-
-            <script src="https://gist.github.com/frankhart2018/6b50468919f820795bf9f15c0bb3369d.js"></script>
-
-            <p>C code:</p>
-
-            <script src="https://gist.github.com/frankhart2018/84f3ac347ba561483d3386a4af7bed2f.js"></script>
-
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Print statement</h3>
-            <h4 class="section__title">Print a string</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/9386a14c87dc1853fdd94fa27eb05d08.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/e1cd0e90c5b42f7d7b1350c11fa35976.js"></script>
-
-            <h4 class="section__title">Print a numeric constant</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/9c9a1337ed39993cae7a3ae2f01e2f97.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/a69d2dec67d309709ef228ac9b3b50e6.js"></script>
-
-            <h4 class="section__title">Print a variable</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/8f660d5776ba83d736378bf40c17bbc8.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/a4b46463aaf7ca6a9f7935099eab47c1.js"></script>
-
-            <h4 class="section__title">Print with variables embedded in strings</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/56246355613061a3e1799621aed10f34.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/4bb5c96d6bd78008abb23c42b8bbd373.js"></script>
-
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Loops</h3>
-            <h4 class="section__title" id="forloop">For loop</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/1892518883df1930cfb343b9d891a069.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/5465c2e84f21655e4c81154b312ac24a.js"></script>
-
-            <h4 class="section__title">While loop</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/1b5d2558438424ec66f968a4e3bbc5a0.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/78a37b20046bb447dedabb3f655116c8.js"></script>
-
-            <h4 class="section__title">Do while loop</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/8ce3d6ddaa4f0578fc037253147b10d5.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/8f98be93afd09fa8fb1d7d55a4336518.js"></script>
-
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Comments</h3>
-            <h4 class="section__title">Single line comments</h4>
-
-              <script src="https://gist.github.com/frankhart2018/752b4d83a969d5c48a80e88f7c2f598c.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/c60724317ef6179956db4caca3cccbb3.js"></script>
-
-            <h4 class="section__title">Multi line comments</h4>
-              <p>simC code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/68bbed233507e1ae8cbd050cd65a67e1.js"></script>
-
-              <p>C code:</p>
-
-              <script src="https://gist.github.com/frankhart2018/3fb2142103f04337e9888b2fd6d762bd.js"></script>
-
-        </section>
+        <!-- Input -->
         <section class="js-section">
           <h3 class="section__title">Input Statement</h3>
 
@@ -376,6 +157,259 @@
           <script src="https://gist.github.com/frankhart2018/6fe074940fe391cf06487a2f1fbfe564.js"></script>
 
         </section>
+        <!-- Variables -->
+        <section class="js-section">
+          <h3 class="section__title">Variables</h3>
+            <h4 class="section__title">Declaration</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/3826a9ab558ac200a28afc6dd0029855.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/da763597348bb2655e22a357a830438c.js"></script>
+
+              <p><strong><u>Note</u></strong>: simC is a dynamically typed syntax for C so variable declarations do not require explicit mention of types.</p>
+              <p><strong><u>Note</u></strong>: Identifiers cannot be named after a C keyword.</p>
+            <h4 class="section__title">Initialization</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/bfca52cce89089c5eca3ea5725dcd424.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/2af1ca92d50e850d0c0fe6dcb7c3f23a.js"></script>
+
+            <h4 class="section__title">Assignment</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/1fb735c6363489754da3aac57a4c0d48.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/af94a9d2ff55f50800c9d36dbecb597f.js"></script>
+
+        </section>
+        <!-- Strings -->
+        <section class="js-section">
+          <h3 class="section__title">Strings</h3>
+            <p>simC code:</p>
+
+            <script src="https://gist.github.com/frankhart2018/6b50468919f820795bf9f15c0bb3369d.js"></script>
+
+            <p>C code:</p>
+
+            <script src="https://gist.github.com/frankhart2018/84f3ac347ba561483d3386a4af7bed2f.js"></script>
+
+        </section>
+        <!-- Print -->
+        <section class="js-section">
+          <h3 class="section__title">Print statement</h3>
+            <h4 class="section__title">Print a string</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/9386a14c87dc1853fdd94fa27eb05d08.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/e1cd0e90c5b42f7d7b1350c11fa35976.js"></script>
+
+            <h4 class="section__title">Print a numeric constant</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/9c9a1337ed39993cae7a3ae2f01e2f97.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/a69d2dec67d309709ef228ac9b3b50e6.js"></script>
+
+            <h4 class="section__title">Print a variable</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/8f660d5776ba83d736378bf40c17bbc8.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/a4b46463aaf7ca6a9f7935099eab47c1.js"></script>
+
+            <h4 class="section__title">Print with variables embedded in strings</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/56246355613061a3e1799621aed10f34.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/4bb5c96d6bd78008abb23c42b8bbd373.js"></script>
+
+        </section>
+        <!-- Arithmetic -->
+        <section class="js-section">
+          <h3 class="section__title">Arithmetic Operators</h3>
+            <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>simC</th>
+              <th>C</th>
+            </tr>
+            <tr>
+              <td>+ (Addition)</td>
+              <td>1 + 2</td>
+              <td>1 + 2</td>
+            </tr>
+            <tr>
+              <td>- (Subtraction)</td>
+              <td>1 - 2</td>
+              <td>1 - 2</td>
+            </tr>
+            <tr>
+              <td>* (Multiplication)</td>
+              <td>1 * 2</td>
+              <td>1 * 2</td>
+            </tr>
+            <tr>
+              <td>/ (Division)</td>
+              <td>1 / 2</td>
+              <td>1 / 2</td>
+            </tr>
+            <tr>
+              <td>% (Modulus)</td>
+              <td>1 % 2</td>
+              <td>1 % 2</td>
+            </tr>
+            <tr>
+              <td>^ (Power, includes math.h during compilation)</td>
+              <td>1 ^ 2</td>
+              <td>pow(1, 2)</td>
+            </tr>
+          </table>
+        </section>
+        <!-- Relational -->
+        <section class="js-section">
+          <h3 class="section__title">Relational Operators</h3>
+            <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>simC</th>
+              <th>C</th>
+            </tr>
+            <tr>
+              <td>< (Lesser than)</td>
+              <td>1 < 2</td>
+              <td>1 < 2</td>
+            </tr>
+            <tr>
+              <td>> (Greater than)</td>
+              <td>1 > 2</td>
+              <td>1 > 2</td>
+            </tr>
+            <tr>
+              <td>== (Equal to)</td>
+              <td>1 == 2</td>
+              <td>1 == 2</td>
+            </tr>
+            <tr>
+              <td><= (Lesser than or equal to)</td>
+              <td>1 <= 2</td>
+              <td>1 <= 2</td>
+            </tr>
+            <tr>
+              <td>>= (Greater than or equal to)</td>
+              <td>1 >= 2</td>
+              <td>1 >= 2</td>
+            </tr>
+            <tr>
+              <td>!= (Not equal to)</td>
+              <td>1 != 2</td>
+              <td>1 != 2</td>
+            </tr>
+          </table>
+        </section>
+        <!-- Logical -->
+        <section class="js-section">
+          <h3 class="section__title" id="logicalop">Logical Operators</h3>
+            <table id="customers">
+            <tr>
+              <th>Operator</th>
+              <th>simC</th>
+              <th>C</th>
+            </tr>
+            <tr>
+              <td>&& (and)</td>
+              <td>1 && 2</td>
+              <td>1 && 2</td>
+            </tr>
+            <tr>
+              <td>|| (or)</td>
+              <td>1 || 2</td>
+              <td>1 || 2</td>
+            </tr>
+          </table>
+        </section>
+        <!-- Comments -->
+        <section class="js-section">
+          <h3 class="section__title">Comments</h3>
+            <h4 class="section__title">Single line comments</h4>
+
+              <script src="https://gist.github.com/frankhart2018/752b4d83a969d5c48a80e88f7c2f598c.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/c60724317ef6179956db4caca3cccbb3.js"></script>
+
+            <h4 class="section__title">Multi line comments</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/68bbed233507e1ae8cbd050cd65a67e1.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/3fb2142103f04337e9888b2fd6d762bd.js"></script>
+
+        </section>
+        <!-- Codeblocks -->
+        <section class="js-section">
+          <h3 class="section__title">Code Blocks</h3>
+          <p>simC code:</p>
+
+          <script src="https://gist.github.com/frankhart2018/8442dc78312286e48f55ea640b1cc89d.js"></script>
+
+          <p>C code:</p>
+
+          <script src="https://gist.github.com/frankhart2018/2da6aa53d86aa349aa1bbc9af0b0b367.js"></script>
+
+        </section>
+        <!-- Loops -->
+        <section class="js-section">
+          <h3 class="section__title">Loops</h3>
+            <h4 class="section__title" id="forloop">For loop</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/1892518883df1930cfb343b9d891a069.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/5465c2e84f21655e4c81154b312ac24a.js"></script>
+
+            <h4 class="section__title">While loop</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/1b5d2558438424ec66f968a4e3bbc5a0.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/78a37b20046bb447dedabb3f655116c8.js"></script>
+
+            <h4 class="section__title">Do while loop</h4>
+              <p>simC code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/8ce3d6ddaa4f0578fc037253147b10d5.js"></script>
+
+              <p>C code:</p>
+
+              <script src="https://gist.github.com/frankhart2018/8f98be93afd09fa8fb1d7d55a4336518.js"></script>
+
+        </section>       
+        <!-- Conditional -->
         <section class="js-section">
           <h3 class="section__title">Conditional Statements</h3>
           <h4 class="section__title">if statement</h4>
@@ -461,18 +495,8 @@
 
           <script src="https://gist.github.com/frankhart2018/e6b96e8d70a7e09fba9165b826c874e6.js"></script>
 
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Code Blocks</h3>
-          <p>simC code:</p>
-
-          <script src="https://gist.github.com/frankhart2018/8442dc78312286e48f55ea640b1cc89d.js"></script>
-
-          <p>C code:</p>
-
-          <script src="https://gist.github.com/frankhart2018/2da6aa53d86aa349aa1bbc9af0b0b367.js"></script>
-
-        </section>
+        </section>       
+        <!-- Functions -->
         <section class="js-section">
           <h3 class="section__title">Functions</h3>
           <h4 class="section__title">Function Definition</h4>
@@ -492,6 +516,7 @@
           <script src="https://gist.github.com/frankhart2018/d9dc8588959ca23cf2db54f438e3b7e7.js"></script>
 
         </section>
+        <!-- Pointers -->
         <section class="js-section">
           <h3 class="section__title">Pointers</h3>
           <h3 class="section__title">Pointer Declaration</h3>
@@ -513,6 +538,7 @@
           <script src="https://gist.github.com/frankhart2018/018ccc2e7467c7259812391860d631d3.js"></script>
 
         </section>
+        <!-- Raw_C -->
         <section class="js-section">
           <h3 class="section__title" id="rawc">Raw C code</h3>
           <p style="text-align: justify;">
@@ -529,15 +555,7 @@
 
           <script src="https://gist.github.com/frankhart2018/d02fb073f9da8259ff8fb9c8e5196e1b.js"></script>
 
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Main Function</h3>
-          <p>simC code:</p>
-          <script src="https://gist.github.com/dhairyaj/be12968e6d7123543dc321e3a1aa4605.js"></script>
-
-          <p>C code:</p>
-          <script src="https://gist.github.com/dhairyaj/cec5b869f9e86a9ccbf61b02a80f68eb.js"></script>
-        </section>
+        </section>       
       </article>
     </div>
 
