@@ -71,12 +71,14 @@
               <ul>
                 <li><p>Open any text editor of choice</p></li>
                 <li><p>Write code using simC high-level syntax</p></li>
-                <li><p>Run the file using simC compiler:</p>
+                <li>
+                  <p>Run the file using simC compiler:</p>
                   <pre class="code code--block">
                   <code>
                     $ simc test.simc
                   </code>
-                </pre></li>
+                </pre>
+              </li>
                 <li><p>C code file is generated with the same name as the simc file, but with extension .c</p></li>
               </ul>
 
@@ -725,7 +727,7 @@
         <section class="js-section">
           <h3 class="section__title" id="rawc">Import Statements</h3>
           <p style="text-align: justify;">
-            To import a third-party modules into your simC code.
+            To import a third-party module into your simC code.
           </p>
           <p>simC code:</p>
 
@@ -735,6 +737,16 @@
 
           <script src="https://gist.github.com/dhairyaj/0fa19376613930d1cafae85dba9f6eba.js"></script>
 
+          <p>Example code: If package name if geometry then:</p>
+
+          <p>simC code:</p>
+
+          <script src="https://gist.github.com/dhairyaj/bbad3f6dfb335a2e614a59563ed1957d.js"></script>
+
+          <p>C code:</p>
+
+          <script src="https://gist.github.com/dhairyaj/61b3c48c128c0acfe8bc720508d43265.js"></script>
+
         </section>
         <!-- Install Third-Party Packages -->
         <section class="js-section">
@@ -743,12 +755,18 @@
             Functions maybe written by other developers that you can use in your code without having to write them again yourself.
           </p>
           <p>simC syntax:</p>
-
-          <script src="https://gist.github.com/dhairyaj/d5f1e8cd9f034686588a93433ed55fe7.js"></script>
+          <pre class="code code--block">
+            <code>
+              $ simpack --name &lt;name_of_package&gt;
+            </code>
+          </pre>
 
           <p>Example code: If package name if geometry then:</p>
-
-          <script src="https://gist.github.com/dhairyaj/c11dfe4cc46df904d8fc043dffd5639a.js"></script>
+          <pre class="code code--block">
+            <code>
+              $ simpack --name geometry
+            </code>
+          </pre>
 
         </section>
         <!-- Raw_C -->
