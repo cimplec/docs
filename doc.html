@@ -93,7 +93,7 @@
                 <p>To print all the tokens during compilation</p>
                 <pre class="code code--block">
                   <code>
-                    $ simc &lt;filename.simc&gt; token
+                    $ simc &lt;filename&gt;.simc token
                   </code>
                 </pre>
               </li>
@@ -101,7 +101,23 @@
                 <p>To print all the opcodes during compilation</p>
                 <pre class="code code--block">
                   <code>
-                    $ simc &lt;filename.simc&gt; opcode
+                    $ simc &lt;filename&gt;.simc opcode
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <p>To print symbol table after lexical analysis</p>
+                <pre class="code code--block">
+                  <code>
+                    $ simc &lt;filename&gt;.simc table_after_lexing
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <p>To print symbol table after parsing</p>
+                <pre class="code code--block">
+                  <code>
+                    $ simc &lt;filename&gt;.simc table_after_parsing
                   </code>
                 </pre>
               </li>
