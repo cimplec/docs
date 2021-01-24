@@ -37,9 +37,9 @@
             <h3 class="section__title">Some Important Links</h3>
             <p style="text-align: justify;">
                 <ol>
-                    <li>Official documentation</li>
-                    <li>simC wiki</li>
-                    <li>Request to join simC slack worspace</li>
+                    <li><a href="https://cimplec/github.io/docs">Official documentation</a></li>
+                    <li><a href="https://github.com/cimplec/sim-c/wiki/">simC wiki</a></li>
+                    <li><a href="https://forms.gle/fE1Wv9qS1ySbokvy6">Request to join simC slack worspace</a></li>
                 </ol>
             </p>
         </section>
@@ -47,7 +47,7 @@
         <section class="js-section">
           <h3 class="section__title">simC Web Compiler</h3>
             <p style="text-align: justify;">
-                You might have used (or heard of) online compilers/interpreters like repl.it and online gdb. 
+                You might have used (or heard of) online compilers/interpreters like <a href="https://repl.it">repl.it</a> and <a href="https://www.onlinegdb.com">online gdb</a>. 
                 These provide compilers or interpreters for various programming languages as a web application, 
                 so that users do not have to install anything on their local machine.
                 <br>Though installing simC is quite easy - <strong>pip install simc</strong>, but it requires one to have python installed in their system. 
@@ -58,23 +58,23 @@
                 <p style="text-align: justify;">
                     We have a very simple web compiler for simC ready and hosted in Heroku. <br>
                     <ul>
-                        <li>Web Compiler Source Code</li>
-                        <li>Hosted Web Compiler</li>
+                        <li><a href="https://github.com/cimplec/text-editor">Web Compiler source code</a></li>
+                        <li><a href="https://simc-editor.herokuapp.com">Hosted Web Compiler</a></li>
                     </ul>
                 </p>
                 <p style="text-align: justify;">
-                    This basic web app uses HTML, CSS, JS and jQuery as front end and Flask as backend. This simply takes user's source code from a
+                    This basic web app uses HTML, CSS, JS and jQuery as front end and Flask as backend. This simply takes the user's source code from a
                     <strong>&lt;textarea&gt;</strong> element and this code is passed using an AJAX request to the Flask backend, which runs the simC compiler and compiles 
-                    the code and returns the C code in the AJAX request as a response.
+                    the code, and returns the C code in the AJAX request as a response.
                 </p>
 
                 <h4 class="section__title">What we are looking for in the new version?</h4>
                 <p style="text-align: justify;">
                     <ol>
                         <li>A better front end (based on Vue.js or React.js - you can choose either technology, whichever you are most comfortable with).</li>
-                        <li>Replace Flask backend to a Node.js backend.</li>
+                        <li>Replace Flask backend with a Node.js backend.</li>
                         <li>Introduce MongoDB as a database.</li>
-                        <li>Allow users to create account and share their code with one another.</li>
+                        <li>Allow users to create accounts and share their codes with one another.</li>
                         <li>Save user's code in AWS S3 (URI can be saved in DB), so that he/she can come back to their old code.</li>
                         <li>Create an admin portal, that shows a simple dashboard of weekly user signup and code compiler.
                             This will also contain information about the current version of simC installed in the web compiler, 
@@ -83,8 +83,8 @@
                 </p>
 
                 <p style="text-align: justify;">
-                    <strong>Note: You are free to add more ideas to this list if you believe it can increase usability of the web compiler.</strong> <br><br>
-                    <strong>Mentor: </strong>Dhairya Jain
+                    <strong>Note: You are free to add more ideas to this list if you believe it can increase the usability of the web compiler.</strong> <br><br>
+                    <strong>Mentor: </strong><a href="https://github.com/dhairyaj">Dhairya Jain</a>
                 </p>
 
         </section><hr>
@@ -93,9 +93,9 @@
         <section class="js-section">
             <h3 class="section__title">simC Optimizer and Garbage Collector</h3>
               <p style="text-align: justify;">
-                If you have a high level idea of what simC is (if you don't have, then I would suggest getting to know simC a bit in the wiki), 
+                If you have a high-level idea of what simC is (if you don't have, then I would suggest getting to know simC a bit in the wiki), 
                 you might be wondering where exactly does an optimizer fit in. simC does not run the user's code, then what might be the use of this optimizer? 
-                Is this referring to optimization of simC compiler's code?<br>
+                Is this referring to the optimization of simC compiler's code?<br>
                 Well, this optimizer is for the code generation stage - the compilation to C code. The code that is generated currently is simply what the user writes,
                 and that will run pretty fast as the final code is C code, but we believe that generating more optimized code will result in even faster C code.
               </p>
@@ -103,7 +103,7 @@
               <h4 class="section__title">What optimizations can be done?</h4>
                   <p style="text-align: justify;">
                       <ol>
-                          <li>Eliminating functions, variables, structures which are defined but never used.</li>
+                          <li>Eliminating functions, variables, structures that are defined but never used.</li>
                           <li>Unrolling loops</li>
                           <li>Evaluating constant expressions ahead of compilation.</li>
                           <li>Making function inline if the number of calls is lower (only one or two calls to the function).</li>
@@ -114,15 +114,15 @@
                   <p style="text-align: justify;">
                     These are some resources to read more about the code optimization problem in compilers:- <br>
                     <ol>
-                        <li>GeeksForGeeks - Code Optimization in Compiler Design</li>
-                        <li>TutorialsPoint - Compiler Design - Code Optimization</li>
-                        <li>Paper - Code Optimization</li>
+                        <li><a href="https://www.geeksforgeeks.org/code-optimization-in-compiler-design/">GeeksForGeeks - Code Optimization in Compiler Design</a></li>
+                        <li><a href="https://www.tutorialspoint.com/compiler_design/compiler_design_code_optimization.htm">TutorialsPoint - Compiler Design - Code Optimization</a></li>
+                        <li><a href="https://www.sciencedirect.com/topics/computer-science/code-optimization">Paper - Code Optimization</a></li>
                     </ol>  
                   </p>
   
                   <p style="text-align: justify;">
-                      <strong>Note: You are free to add more ideas to this list if you believe it can potentially speed up resulting C code.</strong> <br><br>
-                      <strong>Mentor: </strong>Shashank Pandey
+                      <strong>Note: You are free to add more ideas to this list if you believe it can potentially speed up the resulting C code.</strong> <br><br>
+                      <strong>Mentor: </strong><a href="https://github.com/ShashankPandey152">Shashank Pandey</a>
                   </p>
   
           </section><hr>
@@ -141,7 +141,7 @@
                     <li>How does it improve simC?</li>
                     <li>How do you plan to implement the project?</li>
                     <li>Tech stack.</li>
-                    <li>Any resource that might help us to understand the intricasies of the project idea.</li>
+                    <li>Any resource that might help us to understand the intricacies of the project idea.</li>
                 </ol>
             </p>
   
