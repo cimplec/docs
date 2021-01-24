@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>simC - GSoC'21 Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="doc.css">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">simC <span class="logo__thin">GSoc'21</span> Projects</h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
+        <li class="menu__item"><a href="https://github.com/cimplec/sim-c" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+
+          <li class="js-btn selected">simC Web Compiler</li>
+          <li class="js-btn">simC Optimizer and Garbage Collector</li>
+          <li class="js-btn">Propose your own project idea</li>
+
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <!-- simC Web Compiler -->
+        <section class="js-section">
+          <h3 class="section__title">simC Web Compiler</h3>
+            <p style="text-align: justify;">
+                You might have used (or heard of) online compilers/interpreters like repl.it and online gdb. 
+                These provide compilers or interpreters for various programming languages as a web application, 
+                so that users do not have to install anything on their local machine.
+                <br>Though installing simC is quite easy - <strong>pip install simc</strong>, but it requires one to have python installed in their system. 
+                This is the primary motivation to create a web compiler for simC.
+            </p>
+
+            <h4 class="section__title">Existing Solution</h4>
+                <p style="text-align: justify;">
+                    We have a very simple web compiler for simC ready and hosted in Heroku. <br>
+                    <ul>
+                        <li>Web Compiler Source Code</li>
+                        <li>Hosted Web Compiler</li>
+                    </ul>
+                </p>
+                <p style="text-align: justify;">
+                    This basic web app uses HTML, CSS, JS and jQuery as front end and Flask as backend. This simply takes user's source code from a
+                    <strong>&lt;textarea&gt;</strong> element and this code is passed using an AJAX request to the Flask backend, which runs the simC compiler and compiles 
+                    the code and returns the C code in the AJAX request as a response.
+                </p>
+
+                <h4 class="section__title">What we are looking for in the new version?</h4>
+                <p style="text-align: justify;">
+                    <ol>
+                        <li>A better front end (based on Vue.js or React.js - you can choose either technology, whichever you are most comfortable with).</li>
+                        <li>Replace Flask backend to a Node.js backend.</li>
+                        <li>Introduce MongoDB as a database.</li>
+                        <li>Allow users to create account and share their code with one another.</li>
+                        <li>Save user's code in AWS S3 (URI can be saved in DB), so that he/she can come back to their old code.</li>
+                        <li>Create an admin portal, that shows a simple dashboard of weekly user signup and code compiler.
+                            This will also contain information about the current version of simC installed in the web compiler, 
+                            and option to upgrade to later versions of simC.</li>
+                    </ol>
+                </p>
+
+                <p style="text-align: justify;">
+                    <strong>Note: You are free to add more ideas to this list if you believe it can increase usability of the web compiler.</strong> <br><br>
+                    <strong>Mentor: </strong>Dhairya Jain
+                </p>
+
+        </section><hr>
+        
+        <!-- simC Optimizer and Garbage Collector -->
+        <section class="js-section">
+            <h3 class="section__title">simC Optimizer and Garbage Collector</h3>
+              <p style="text-align: justify;">
+                If you have a high level idea of what simC is (if you don't have, then I would suggest getting to know simC a bit in the wiki), 
+                you might be wondering where exactly does an optimizer fit in. simC does not run the user's code, then what might be the use of this optimizer? 
+                Is this referring to optimization of simC compiler's code?<br>
+                Well, this optimizer is for the code generation stage - the compilation to C code. The code that is generated currently is simply what the user writes,
+                and that will run pretty fast as the final code is C code, but we believe that generating more optimized code will result in even faster C code.
+              </p>
+  
+              <h4 class="section__title">What optimizations can be done?</h4>
+                  <p style="text-align: justify;">
+                      <ol>
+                          <li>Eliminating functions, variables, structures which are defined but never used.</li>
+                          <li>Unrolling loops</li>
+                          <li>Evaluating constant expressions ahead of compilation.</li>
+                          <li>Making function inline if the number of calls is lower (only one or two calls to the function).</li>
+                      </ol>
+                  </p>
+                    
+                  <h4 class="section__title">Resources</h4>
+                  <p style="text-align: justify;">
+                    These are some resources to read more about the code optimization problem in compilers:- <br>
+                    <ol>
+                        <li>GeeksForGeeks - Code Optimization in Compiler Design</li>
+                        <li>TutorialsPoint - Compiler Design - Code Optimization</li>
+                        <li>Paper - Code Optimization</li>
+                    </ol>  
+                  </p>
+  
+                  <p style="text-align: justify;">
+                      <strong>Note: You are free to add more ideas to this list if you believe it can potentially speed up resulting C code.</strong> <br><br>
+                      <strong>Mentor: </strong>Shashank Pandey
+                  </p>
+  
+          </section><hr>
+
+          <!-- Propose your own project idea -->
+          <section class="js-section">
+            <h3 class="section__title">Propose your own project idea</h3>
+              <p style="text-align: justify;">
+                We would also like to state that choosing one out of these two projects is not mandatory and we welcome your project ideas. 
+                The following points are required in your project idea:-
+              </p>
+  
+              <p style="text-align: justify;">
+                <ol>
+                    <li>Overview of the idea.</li>
+                    <li>How does it improve simC?</li>
+                    <li>How do you plan to implement the project?</li>
+                    <li>Tech stack.</li>
+                    <li>Any resource that might help us to understand the intricasies of the project idea.</li>
+                </ol>
+            </p>
+  
+          </section>
+
+      </article>
+    </div>
+
+    <footer class="footer">Made with &hearts; for C developers.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="main.js"></script>
+  </body>
+</html>
